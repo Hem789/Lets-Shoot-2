@@ -12,7 +12,7 @@ Assets/Scenes/Level5.4.unity
 Assets/Scenes/Level5.5.unity
 SceneListEnd?
 12431457f3272bcb97fd6622ea99de33 Assembly-CSharp.dll:.Survival
-6870cadd195d9884fa7bf2f45d2dc200 Assembly-CSharp.dll:.Cam
+999a9156734d31c6b599a4b0b51e3722 Assembly-CSharp.dll:.Cam
 ce669872a2be11bc686ea22961d8a3bb Assembly-CSharp.dll:.Joystick
 4a959fc6a11635086221d7f4a1f3174c Assembly-CSharp.dll:.createEnemyHeli
 7d50b96ee2311a9e2918f3ac84abebdb Assembly-CSharp.dll:.MainMenu
@@ -193,6 +193,7 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 63b5203b8969371d69658a57c77cf10a Assembly-CSharp.dll:.Plus
 0955befc405ffa159afd2d7c566e3e9f Assembly-CSharp.dll:.sniperWalk
+f1cc023ec6416238e0afd51fd82e7ac4 Assembly-CSharp.dll:.Sensitivity
 350f6f9c95c0aae398eae056b7cea4a1 Assembly-CSharp.dll:.Colision
 e3f7d97ebb851635a6cf4fc5c5c53868 Assembly-CSharp.dll:.GetIn
 778f56026a86195869bc7d66f115aebc Assembly-CSharp.dll:.Lift
@@ -256,6 +257,6 @@ daaac0252fd6b4446d1a0010b3c1cd64 Assembly-CSharp.dll:.AP_Reference
 9dac16f3efc511835ac976dfae55f580 Assembly-CSharp.dll:.VariableJoystick
 ffc46ef211ad5a2f2b076abf30486868 Assembly-CSharp.dll:.FixedTouchField
 e6969f08230ba78782af84cf02f2a57f Assembly-CSharp.dll:.FPS
-03ee52ec9ed4f08c3a46ccc157de836a Assembly-CSharp.dll:.levelStorage
+c1520a7b6661729cb90ad57b42e2d42b Assembly-CSharp.dll:.levelStorage
 74d4c3d45467e79fabd95225f8a2527b Assembly-CSharp.dll:.mapCamera
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.Glass

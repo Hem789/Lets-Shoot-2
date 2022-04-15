@@ -9,7 +9,7 @@ public class Cam : MonoBehaviour
     private Vector3 offset;
     public float min,max;
     [SerializeField]
-    private float rotSpeed=.5F,joyrot=0.34F;
+    private float rotSpeed,joyrot,zoom,normal;
     public Transform pivot,body;
     public FixedTouchField touch;
     private GameManager manager;
@@ -23,6 +23,13 @@ public class Cam : MonoBehaviour
         offset=pivot.position-transform.position;
         manager=FindObjectOfType<GameManager>();
         camu=Camera.main;
+        levelData data=SaveManager.StoredItem();
+        if(data!=null)
+        {
+            normal=data.normal;
+        joyrot=data.zoom;
+        zoom=data.scoped;
+        }
     }
     void OnEnable()
     {
@@ -42,11 +49,11 @@ public class Cam : MonoBehaviour
         }
         if(manager.scoped==true)
         {
-            rotSpeed=.08F;
+            rotSpeed=zoom;
         }
         else
         {
-            rotSpeed=.5F;
+            rotSpeed=normal;
         }
     //}
     // Update is called once per frame

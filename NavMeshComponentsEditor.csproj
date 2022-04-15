@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{800F5C04-FBA5-E050-7A1B-A25DBDBF3C0F}</ProjectGuid>
+    <ProjectGuid>{B18435C0-BBB2-B697-0974-CD86004CA4FC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>NavMeshComponentsEditor</AssemblyName>
@@ -294,13 +294,13 @@
  <HintPath>D:/Older version/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="EasyRoads3Dv3Editor">
- <HintPath>D:/Backup/My-shooting-game/Assets/EasyRoads3D/Editor/EasyRoads3Dv3Editor.dll</HintPath>
+ <HintPath>D:/PC version/Lets-Shoot-2/Assets/EasyRoads3D/Editor/EasyRoads3Dv3Editor.dll</HintPath>
  </Reference>
  <Reference Include="EasyRoads3Dv3">
- <HintPath>D:/Backup/My-shooting-game/Assets/EasyRoads3D/lib/EasyRoads3Dv3.dll</HintPath>
+ <HintPath>D:/PC version/Lets-Shoot-2/Assets/EasyRoads3D/lib/EasyRoads3Dv3.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
- <HintPath>D:/Backup/My-shooting-game/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+ <HintPath>D:/PC version/Lets-Shoot-2/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>D:/Older version/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -659,7 +659,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{0C7986E7-25B3-9B59-9307-C3C4B3917D6D}</Project>      <Name>NavMeshComponents</Name>    </ProjectReference>
+      <Project>{4D9211EE-585B-37BA-56EA-2C64B94877B8}</Project>      <Name>NavMeshComponents</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

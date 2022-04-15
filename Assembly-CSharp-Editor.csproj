@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4705883C-D911-101F-FB16-F9BC005194AA}</ProjectGuid>
+    <ProjectGuid>{09EBC4B9-D314-CF06-5943-E5D780D61DA0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -61,10 +61,10 @@
      <Compile Include="Assets\MobFarm\AutoPool\Editor\AP_Manager_Editor.cs" />
      <Compile Include="Assets\MobFarm\AutoPool\Editor\AP_PoolBlock_Drawer.cs" />
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>D:/Backup/My-shooting-game/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>D:/PC version/Lets-Shoot-2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>D:/Backup/My-shooting-game/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>D:/PC version/Lets-Shoot-2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>D:/Older version/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -301,13 +301,13 @@
  <HintPath>D:/Older version/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="EasyRoads3Dv3Editor">
- <HintPath>D:/Backup/My-shooting-game/Assets/EasyRoads3D/Editor/EasyRoads3Dv3Editor.dll</HintPath>
+ <HintPath>D:/PC version/Lets-Shoot-2/Assets/EasyRoads3D/Editor/EasyRoads3Dv3Editor.dll</HintPath>
  </Reference>
  <Reference Include="EasyRoads3Dv3">
- <HintPath>D:/Backup/My-shooting-game/Assets/EasyRoads3D/lib/EasyRoads3Dv3.dll</HintPath>
+ <HintPath>D:/PC version/Lets-Shoot-2/Assets/EasyRoads3D/lib/EasyRoads3Dv3.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
- <HintPath>D:/Backup/My-shooting-game/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+ <HintPath>D:/PC version/Lets-Shoot-2/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>D:/Older version/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -666,11 +666,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{372502F3-B894-6197-A6C2-10B36059EA9E}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{812ECDB8-C71A-21A0-69AA-3F7C88EE4310}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{800F5C04-FBA5-E050-7A1B-A25DBDBF3C0F}</Project>      <Name>NavMeshComponentsEditor</Name>    </ProjectReference>
+      <Project>{B18435C0-BBB2-B697-0974-CD86004CA4FC}</Project>      <Name>NavMeshComponentsEditor</Name>    </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{0C7986E7-25B3-9B59-9307-C3C4B3917D6D}</Project>      <Name>NavMeshComponents</Name>    </ProjectReference>
+      <Project>{4D9211EE-585B-37BA-56EA-2C64B94877B8}</Project>      <Name>NavMeshComponents</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

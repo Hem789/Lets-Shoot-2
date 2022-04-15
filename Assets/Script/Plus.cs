@@ -17,7 +17,7 @@ public class Plus : MonoBehaviour
             MF_AutoPool.Spawn(effect,transform.position,transform.rotation);
             //Destroy(gameObject,.4F);
             //effect.SetActive(true);
-            if(FindObjectOfType<GameManager>().level==2 || FindObjectOfType<GameManager>().level==4)
+            if(FindObjectOfType<GameManager>().level==2 || FindObjectOfType<GameManager>().level==6)
             {
              MF_AutoPool.Despawn(gameObject);
             }
