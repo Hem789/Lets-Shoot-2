@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-D:/Backup/Lets-Shoot-2/Hem.apk
+D:/apk/Hem.apk
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/retry.unity

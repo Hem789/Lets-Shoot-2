@@ -31,7 +31,16 @@ public class createEnemyHeli : MonoBehaviour
         if( delay<=0 && FindObjectOfType<GameManager>().outside==false)
         {
             //MF_AutoPool.Spawn(heli,new Vector3(player.transform.position.x,0,player.transform.position.z)+new Vector3(5*x,20,5*z),Quaternion.Euler(0,180,0));
+            if(suru.transform.position.y>0)
+            {
             MF_AutoPool.Spawn(heli,suru.transform.position,Quaternion.Euler(0,180,0));
+            }
+            /*else
+            {
+                suru.transform.parent=null;
+                suru.gameObject.tag="3";
+                Debug.Log(suru.transform.position);
+            }*/
             if(x==0)
             {
             delay=10;

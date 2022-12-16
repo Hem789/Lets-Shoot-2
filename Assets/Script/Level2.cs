@@ -28,7 +28,7 @@ public class Level2 : MonoBehaviour
       float z=Random.Range(-15,15);
         if(plustime<=0)
       {
-        MF_AutoPool.Spawn(plus, new Vector3(303.7F,15.818F,163.3F),Quaternion.identity);
+        MF_AutoPool.Spawn(plus, new Vector3(303.7F,13.5F,163.3F),Quaternion.identity);
         plustime=20;
       }
       if(plustime>0)

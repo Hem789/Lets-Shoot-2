@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4645230151214583349}
   - component: {fileID: 239293638050949876}
   - component: {fileID: 54526736194361316}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: sniper
   m_TagString: Sniper
   m_Icon: {fileID: 0}
@@ -49,6 +49,7 @@ MonoBehaviour:
   time: 1
   timeStore: 1
   Speed: 30
+  trail: {fileID: 0}
 --- !u!65 &239293638050949876
 BoxCollider:
   m_ObjectHideFlags: 0

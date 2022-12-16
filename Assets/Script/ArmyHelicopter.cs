@@ -73,28 +73,31 @@ public class ArmyHelicopter : MonoBehaviour
     {
         if(this.gameObject.tag=="Player")
         {
-            if(Physics.Raycast(transform.position,transform.right,out hitRight,200))
+            if(Physics.Raycast(transform.position,transform.right,out hitRight,40))
             {
             if(hitRight.transform.gameObject.tag== "Player")
             {
                 Vector3 L=new Vector3(transform.position.x,0,transform.position.z)-new Vector3(hitRight.point.x,0,hitRight.point.z);
-                Controller.Move(L);
+                L=L/L.magnitude;
+                Controller.Move(L*Speed*3);
             }
             }
-            if(Physics.Raycast(transform.position,-transform.right,out hitLeft,200))
+            if(Physics.Raycast(transform.position,-transform.right,out hitLeft,40))
             {
                 if(hitLeft.transform.gameObject.tag=="Player")
             {
                 Vector3 R=new Vector3(transform.position.x,0,transform.position.z)-new Vector3(hitLeft.point.x,0,hitLeft.point.z);
-                Controller.Move(R);
+                R=R/R.magnitude;
+                Controller.Move(R*Speed*3);
             }
             }
-            if(Physics.Raycast(transform.position,-transform.forward,out hitback,200))
+            if(Physics.Raycast(transform.position,-transform.forward,out hitback,40))
             {
                 if(hitback.transform.gameObject.tag=="Player")
             {
                 Vector3 B=new Vector3(transform.position.x,0,transform.position.z)-new Vector3(hitback.point.x,0,hitback.point.z);
-                Controller.Move(B);
+                B=B/B.magnitude;
+                Controller.Move(B*Speed*3);
             }
             }
         }
