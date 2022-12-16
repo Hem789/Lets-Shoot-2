@@ -6,11 +6,12 @@ public class Car : MonoBehaviour
 {
   //  public GameObject box;
     public Transform pivot,piv;
-    public float motorForce,BrakeForce, steer;
+    public float motorForce,BrakeForce, steer, maxVol,vol=0;
     public Transform FLW,BLW,FRW,BRW;
     public FixedButton right, left,up ,down,brake;
     public GameObject Light1,Light2,carcam;//,revMotion,maxRunSound;
     public AudioSource motion;
+    public volume volScript;
     //private bool revStarter=false;
     private float h=0,v=0;//,maxRunTime=4.8F;
     private GameManager manager;
@@ -25,10 +26,22 @@ public class Car : MonoBehaviour
     }
     void Awake()
     {
+        //maxVol=motion.volume;
         manager=FindObjectOfType<GameManager>();
+    }
+    void Start()
+    {
+        maxVol=motion.volume;
+        volScript.slider(0F);
+        Debug.Log(maxVol);
     }
     void Update ()
     {
+        
+        if(!up.Pressed && vol>0)
+        {
+           
+        }
         if(manager.Pause==true)
             { 
         motion.enabled=false;
@@ -56,10 +69,24 @@ public class Car : MonoBehaviour
         v=0;
         if(up.Pressed)
         {
+            motion.enabled=true;
+            if(vol<maxVol)
+            {
+                 for(float x=vol; x<=maxVol; x+=Time.fixedDeltaTime/2F)
+            {
+                if(vol<=1)
+                {
+                    vol=x;
+                volScript.slider( vol);
+                }
+                //motion.volume=vol;
+            }
+            }
+
             v=1;
             //if(maxRunTime>=0)
             //{
-            motion.enabled=true;
+            
             //revMotion.SetActive(false);
             //maxRunTime-=Time.fixedDeltaTime;
             //}
@@ -77,7 +104,23 @@ public class Car : MonoBehaviour
         }
         if(!up.Pressed)
         {
-            motion.enabled=false;
+            if(vol>0)
+            {
+                for(float x=vol; x>0; x-=Time.deltaTime/2)
+            {
+                
+                if(x<=0)
+                {
+                    x=0;
+                }
+                if(x>=0)
+                {
+                    vol=x;
+                volScript.slider( vol);
+                }//motion.volume=vol;
+            } 
+            }
+            //motion.enabled=false;
             /*if(revStarter==true)
             {
                 maxRunTime=4.8F;

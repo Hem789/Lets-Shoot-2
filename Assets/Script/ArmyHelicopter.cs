@@ -6,7 +6,7 @@ public class ArmyHelicopter : MonoBehaviour
 {
     [SerializeField]
     private bool spaw, seenDependent;
-    private RaycastHit hit,hit2;
+    private RaycastHit hit,hit2,hitLeft,hitRight,hitback;
     public LayerMask mask;
     public CharacterController Controller;
     private string tagy;
@@ -32,6 +32,17 @@ public class ArmyHelicopter : MonoBehaviour
             health-=4;
         }
     }
+    /*void OnTriggerStay(Collider a)
+    {
+        //while(true)
+        //{
+        if(a.gameObject.tag=="Player" || a.gameObject.tag=="Finish")
+        {
+        Vector3 x=new Vector3(transform.position.x,0,transform.position.z)-new Vector3(a.transform.position.x,0,a.transform.position.z);
+        Controller.Move(x*10);
+        }
+        //}
+    }*/
     
     // Start is called before the first frame update
     void Start()
@@ -58,10 +69,37 @@ public class ArmyHelicopter : MonoBehaviour
         Destr=15;
         decrease=0;
     }
-   /* void FixedUpdate()
+    void FixedUpdate()
     {
-        dist=transform.position-listener.transform.position;
-    }*/
+        if(this.gameObject.tag=="Player")
+        {
+            if(Physics.Raycast(transform.position,transform.right,out hitRight,200))
+            {
+            if(hitRight.transform.gameObject.tag== "Player")
+            {
+                Vector3 L=new Vector3(transform.position.x,0,transform.position.z)-new Vector3(hitRight.point.x,0,hitRight.point.z);
+                Controller.Move(L);
+            }
+            }
+            if(Physics.Raycast(transform.position,-transform.right,out hitLeft,200))
+            {
+                if(hitLeft.transform.gameObject.tag=="Player")
+            {
+                Vector3 R=new Vector3(transform.position.x,0,transform.position.z)-new Vector3(hitLeft.point.x,0,hitLeft.point.z);
+                Controller.Move(R);
+            }
+            }
+            if(Physics.Raycast(transform.position,-transform.forward,out hitback,200))
+            {
+                if(hitback.transform.gameObject.tag=="Player")
+            {
+                Vector3 B=new Vector3(transform.position.x,0,transform.position.z)-new Vector3(hitback.point.x,0,hitback.point.z);
+                Controller.Move(B);
+            }
+            }
+        }
+       // dist=transform.position-listener.transform.position;
+    }
 
     // Update is called once per frame
     void Update()
@@ -108,9 +146,9 @@ public class ArmyHelicopter : MonoBehaviour
                 seenCount=0;
             }
         }
-        if(transform.position.y<Player.transform.position.y)
+        if(transform.position.y<Player.transform.position.y && transform.position.y<33)
         {
-            transform.position+=new Vector3(0,0.1F,0);
+            //transform.position+=new Vector3(0,0.1F,0);
         }
         if(transform.position.y<=15)
         {

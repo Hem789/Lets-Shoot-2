@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slide: {fileID: 0}
-  volumeCofficient: 0.05
+  volumeCofficient: 0.1
 --- !u!82 &613872821454291024
 AudioSource:
   m_ObjectHideFlags: 0
@@ -812,6 +812,7 @@ MonoBehaviour:
   sphere: {fileID: 0}
   canvas: {fileID: 0}
   enter: {fileID: 0}
+  x: {fileID: 0}
   camu: {fileID: 0}
   xirbool: {fileID: 0}
   niski: {fileID: 0}
@@ -838,6 +839,8 @@ MonoBehaviour:
   motorForce: 15000
   BrakeForce: 500000
   steer: 35
+  maxVol: 0
+  vol: 0
   FLW: {fileID: 2662065685959721428}
   BLW: {fileID: 2662065685671197044}
   FRW: {fileID: 2662065686397849572}
@@ -851,6 +854,7 @@ MonoBehaviour:
   Light2: {fileID: 613872821799223808}
   carcam: {fileID: 129313900}
   motion: {fileID: 613872821454291024}
+  volScript: {fileID: 613872821454291025}
   FL: {fileID: 2662065687462522647}
   FR: {fileID: 2662065686041661067}
   BL: {fileID: 2662065686420004797}
@@ -1444,6 +1448,8 @@ MonoBehaviour:
   max: 45
   rotSpeed: 0.5
   joyrot: 0.3
+  zoom: 0
+  normal: 0
   pivot: {fileID: 2662065686555968065}
   body: {fileID: 0}
   touch: {fileID: 0}

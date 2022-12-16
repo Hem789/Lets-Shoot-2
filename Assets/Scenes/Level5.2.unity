@@ -5658,6 +5658,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32cc3cf2415b9d4eb0e9af060072b5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  normal: 0
+  shoot: 0
+  scoped: 0
+  norm: {fileID: 0}
+  shot: {fileID: 0}
+  scop: {fileID: 0}
   don: 2
   anime: {fileID: 0}
   level: {fileID: 0}
@@ -71572,6 +71578,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Screen
       objectReference: {fileID: 0}
+    - target: {fileID: 5594341561656046921, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341561656046921, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341561656046921, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5594341561656046926, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
         type: 3}
       propertyPath: m_FontData.m_HorizontalOverflow
@@ -71581,6 +71602,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_VerticalOverflow
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341561656046926, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341561656046926, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 5594341561951956946, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
         type: 3}
@@ -71592,6 +71623,46 @@ PrefabInstance:
       propertyPath: m_FontData.m_VerticalOverflow
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5594341561951956946, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341561951956946, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341561951956957, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341561951956957, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341561951956957, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341562122478657, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341562122478657, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341562122478657, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5594341562122478662, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
         type: 3}
       propertyPath: m_FontData.m_HorizontalOverflow
@@ -71601,6 +71672,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_VerticalOverflow
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341562122478662, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341562122478662, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 5594341562139098968, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
         type: 3}
@@ -71617,11 +71698,51 @@ PrefabInstance:
       propertyPath: m_FontData.m_VerticalOverflow
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5594341562427556922, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341562427556922, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341562427557061, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341562427557061, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341562427557061, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5594341562556031141, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 640083857}
+    - target: {fileID: 5594341562653880446, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341562653880446, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341562653880446, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5594341562653880447, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
         type: 3}
       propertyPath: m_FontData.m_HorizontalOverflow
@@ -71631,6 +71752,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_VerticalOverflow
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341562653880447, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594341562653880447, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 5594341562704298916, guid: 6f6fe0b7bb77dac4895450d683d90d7f,
         type: 3}

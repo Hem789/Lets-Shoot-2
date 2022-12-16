@@ -8,7 +8,7 @@ public class BrownCoin : MonoBehaviour
     public Animator anime;
     private Vector3 distance;
     private GameObject player;
-    private float destime=180;
+    //private float destime=180;
     // Start is called before the first frame update
     void OnTriggerEnter(Collider a)
     {
@@ -28,24 +28,24 @@ public class BrownCoin : MonoBehaviour
         }
         
     }
-    void OnEnable()
+    /*void OnEnable()
     {
         destime=180;
-    }
+    }*/
 
     // Update is called once per frame
     void FixedUpdate()
     {
         player=GameObject.FindWithTag("Player");
         distance=transform.position-player.transform.position;
-        if(destime<=0)
+        /*if(destime<=0)
         {
             MF_AutoPool.Despawn(gameObject);
         }
         if(destime>0)
         {
             destime-=Time.deltaTime;
-        }
+        }*/
         if(distance.magnitude>30)
         {
             anime.enabled=false;
