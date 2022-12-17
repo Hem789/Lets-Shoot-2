@@ -9,7 +9,7 @@ public class enemyWalk : MonoBehaviour
     public GameObject gun,handgun,backgun,coin,gunCollider;
     public GameObject player;
     private RaycastHit hit,nevRay;
-    private float destroy,health=5;
+    private float destroy,health=5,tim=60;
     private Vector3 moveDirection,distance;
     public Animator anime;
     public bool follow,shoot,dead=false,doNevMesh=true;
@@ -30,6 +30,7 @@ public class enemyWalk : MonoBehaviour
         lvl=manager.level;
         agent.enabled=false;
         player=GameObject.FindWithTag("Player");
+        //Debug.Log(lvl);
     }
     void OnCollisionStay(Collision a)
     {
@@ -151,8 +152,17 @@ public class enemyWalk : MonoBehaviour
             gunCollider.SetActive(false);
         }
         player=GameObject.FindWithTag("Player");
-        if(lvl==2)
+        if(lvl==2 || lvl==6)
         {
+            if(t1)
+            {
+            Destroy(t1.gameObject);
+            Destroy(t2.gameObject);
+            Destroy(t3.gameObject);
+            Destroy(t4.gameObject);
+            Destroy(t5.gameObject);
+            Destroy(t6.gameObject);
+            }
             player=GameObject.FindWithTag("Player");
             Vector3 a=player.transform.position-transform.position;
             if(manager.outside==true && a.magnitude>=150)
@@ -163,6 +173,23 @@ public class enemyWalk : MonoBehaviour
                 if(Physics.Raycast(player.transform.position+new Vector3(0,1,0),new Vector3(0,-1,0),out hit,10))
                 transform.position=new Vector3(player.transform.position.x+x,hit.point.y,player.transform.position.z+y);
             }
+            if(lvl==6)
+            {
+                if(tim<=0)
+                {
+                anime.applyRootMotion=false;
+                float x=Random.Range(-30,30);
+                float y=Random.Range(-30,30);
+                if(Physics.Raycast(player.transform.position+new Vector3(0,1,0),new Vector3(0,-1,0),out hit,10))
+                transform.position=new Vector3(player.transform.position.x+x,hit.point.y,player.transform.position.z+y);
+                tim=60;
+                }
+                if(tim>0)
+                {
+                    tim-=Time.deltaTime;
+                }
+            }
+            
         }
         if(dead==false)
         {
