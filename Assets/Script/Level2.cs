@@ -48,7 +48,7 @@ public class Level2 : MonoBehaviour
               Instantiate(tactical,new Vector3(player.transform.position.x+2*x,hit.point.y,player.transform.position.z+2*z),player.transform.rotation* Quaternion.Euler(0,180,0));
               number++;
             }
-            time=5;
+            time=15;
             }
           }
         }

@@ -122,8 +122,15 @@ public class enemyWalk : MonoBehaviour
             ragdoll(true);
         }
         if(transform.position.y<-13)
-        {
+        { 
+            if(lvl!=2 && lvl !=6)
+            {
             Destroy(gameObject);
+            }
+            else
+            {
+                transform.position=new Vector3(player.transform.position.x,1,player.transform.position.z);
+            }
         }      
     }
     void FixedUpdate()
@@ -321,7 +328,7 @@ public class enemyWalk : MonoBehaviour
                 {
                     seentime-=Time.deltaTime;
                 }
-                if(seentime<=0 && lvl!=2)
+                if(seentime<=0 && lvl!=2 && lvl!=6)
                 {
                     seen=false;
                     agent.enabled=false;

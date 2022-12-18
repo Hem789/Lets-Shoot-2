@@ -139,6 +139,14 @@ public class ArmyHelicopter : MonoBehaviour
         fan.transform.Rotate(0,30,0);
         backfan.transform.Rotate(20,0,0);
         Player=GameObject.FindWithTag(targetName);
+        if(Player==null)
+        {
+            if(this.gameObject.tag=="Finish")
+            {
+                targetName="Player";
+                Player=GameObject.FindWithTag(targetName);
+            }
+        }
         if(Player!=null)
         {
         Direction=Player.transform.position-transform.position;
