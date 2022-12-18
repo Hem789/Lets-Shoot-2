@@ -119,7 +119,7 @@ public class Player : MonoBehaviour
             falling=false;
             colli.enabled=true;
             //if(Input.GetAxis("Vertical")==0||Input.GetAxis("Horizontal")==0)
-            if(joystick.Vertical==0 || joystick.Horizontal==0)
+            if(joystick.Vertical==0 && joystick.Horizontal==0)
             {
                 anime.Play("Swimming Idle");
             transform.position=new Vector3(transform.position.x,swimf,transform.position.z);

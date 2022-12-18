@@ -53,12 +53,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs" />
-     <Compile Include="Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs" />
-     <Compile Include="Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs" />
-     <Compile Include="Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs" />
-     <Compile Include="Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs" />
-     <Compile Include="Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs" />
+     <Compile Include="Assets\Prefabs\NavMeshComponents\Editor\NavMeshAssetManager.cs" />
+     <Compile Include="Assets\Prefabs\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs" />
+     <Compile Include="Assets\Prefabs\NavMeshComponents\Editor\NavMeshLinkEditor.cs" />
+     <Compile Include="Assets\Prefabs\NavMeshComponents\Editor\NavMeshModifierEditor.cs" />
+     <Compile Include="Assets\Prefabs\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs" />
+     <Compile Include="Assets\Prefabs\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs" />
  <Reference Include="UnityEngine.AIModule">
  <HintPath>D:/Older version/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
  </Reference>

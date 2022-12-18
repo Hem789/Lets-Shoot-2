@@ -53,10 +53,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshLink.cs" />
-     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifier.cs" />
-     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
-     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshSurface.cs" />
+     <Compile Include="Assets\Prefabs\NavMeshComponents\Scripts\NavMeshLink.cs" />
+     <Compile Include="Assets\Prefabs\NavMeshComponents\Scripts\NavMeshModifier.cs" />
+     <Compile Include="Assets\Prefabs\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
+     <Compile Include="Assets\Prefabs\NavMeshComponents\Scripts\NavMeshSurface.cs" />
  <Reference Include="UnityEngine.AIModule">
  <HintPath>D:/Older version/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
  </Reference>

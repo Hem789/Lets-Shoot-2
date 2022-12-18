@@ -8,7 +8,7 @@ public class levelData //: MonoBehaviour
 {
     // Start is called before the first frame updat
     public int store;
-    public float normal,zoom,scoped;
+    public float normal,zoom,scoped, volume;
     public bool Level2,Level3,Level4,Level5;
     public levelData(levelStorage a)
     {
@@ -20,6 +20,7 @@ public class levelData //: MonoBehaviour
         normal=a.normal;
         zoom=a.shoot;
         scoped=a.scoped;
+        volume=a.vol;
         
        // Debug.Log(normal+","+ zoom+ "," +scoped);
         if(store>=2)

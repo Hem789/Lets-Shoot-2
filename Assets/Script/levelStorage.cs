@@ -7,10 +7,10 @@ using UnityEngine.SceneManagement;
 public class levelStorage : MonoBehaviour
 {
     public static int currentLevel,yourScore;
-    public float normal,shoot,scoped;
+    public float normal,shoot,scoped,vol;
     //public static float stanormal,stashoot,stascoped;
 
-    public Slider norm,shot,scop;
+    public Slider norm,shot,scop,volu;
     public int don;
     public Animator anime;
     private Vector3 distance;
@@ -104,6 +104,7 @@ public class levelStorage : MonoBehaviour
         normal=norm.value;
         shoot=shot.value;
         scoped=scop.value;
+        vol=volu.value;
         SaveManager.Save(this);
     }
    /* public void normSens(float a)
@@ -123,12 +124,14 @@ public class levelStorage : MonoBehaviour
         norm.value=.5F;
         shot.value=.34F;
         scop.value=.04F;
+        volu.value=0.5F;
     }
     public void Save()
     {
         normal=norm.value;
         shoot=shot.value;
         scoped=scop.value;
+        vol=volu.value;
         SaveManager.Save(this);
         
     }
