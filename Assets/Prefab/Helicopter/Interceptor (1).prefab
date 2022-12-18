@@ -241,7 +241,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &613872821454291030
 Transform:
   m_ObjectHideFlags: 0
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slide: {fileID: 0}
-  volumeCofficient: 0.1
+  volumeCofficient: 0.2
 --- !u!82 &613872821454291024
 AudioSource:
   m_ObjectHideFlags: 0
@@ -277,7 +277,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613872821454291031}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cdb8d68e1d5c72a4eac7da1d9d3a505b, type: 3}
@@ -839,8 +839,6 @@ MonoBehaviour:
   motorForce: 15000
   BrakeForce: 500000
   steer: 35
-  maxVol: 0
-  vol: 0
   FLW: {fileID: 2662065685959721428}
   BLW: {fileID: 2662065685671197044}
   FRW: {fileID: 2662065686397849572}
@@ -853,8 +851,7 @@ MonoBehaviour:
   Light1: {fileID: 613872822355879217}
   Light2: {fileID: 613872821799223808}
   carcam: {fileID: 129313900}
-  motion: {fileID: 613872821454291024}
-  volScript: {fileID: 613872821454291025}
+  motion: {fileID: 613872821454291031}
   FL: {fileID: 2662065687462522647}
   FR: {fileID: 2662065686041661067}
   BL: {fileID: 2662065686420004797}
