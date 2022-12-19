@@ -4897,6 +4897,7 @@ MonoBehaviour:
   cam: {fileID: 0}
   jumpbool: {fileID: 0}
   firebool: {fileID: 0}
+  croach: 0
   Swimming: {fileID: 35746937}
   reloader: {fileID: 960661101}
   reloading: {fileID: 8300000, guid: b16b59d8d6ed0e94b8f405587ba4638d, type: 3}

@@ -80,6 +80,7 @@ public class Player : MonoBehaviour
             if(ground.distance<=1.8F && falling==true)
             {
                 anime.SetBool("hitGround",true);
+                transform.position=new Vector3(transform.position.x,ground.point.y,transform.position.z);
                /* if(transform.position.y>-1.6F)
                 {
                 rb.AddForce(new Vector3(0,-180F,0));
@@ -88,6 +89,8 @@ public class Player : MonoBehaviour
 
                 manager.healthCount=0;
                 ragdollcontrol=true;
+                falling=false;
+                doll(true);
             
             }
         }
