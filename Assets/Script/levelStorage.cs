@@ -29,6 +29,7 @@ public class levelStorage : MonoBehaviour
         normal=data.normal;
         shoot=data.zoom;
         scoped=data.scoped;
+        vol=data.volume;
         //Debug.Log(normal+","+shoot+","+scoped);
         }
 

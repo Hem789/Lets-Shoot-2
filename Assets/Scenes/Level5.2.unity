@@ -2124,7 +2124,7 @@ PrefabInstance:
     - target: {fileID: 9047501371615908992, guid: e07ba10ccf3d8114ba756b014f22bf9e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14
+      value: -13.99
       objectReference: {fileID: 0}
     - target: {fileID: 9047501371615908992, guid: e07ba10ccf3d8114ba756b014f22bf9e,
         type: 3}
@@ -5770,9 +5770,11 @@ MonoBehaviour:
   normal: 0
   shoot: 0
   scoped: 0
+  vol: 0
   norm: {fileID: 0}
   shot: {fileID: 0}
   scop: {fileID: 0}
+  volu: {fileID: 0}
   don: 2
   anime: {fileID: 0}
   level: {fileID: 0}
@@ -23823,7 +23825,7 @@ PrefabInstance:
     - target: {fileID: 9047501371615908992, guid: e07ba10ccf3d8114ba756b014f22bf9e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14
+      value: -13.99
       objectReference: {fileID: 0}
     - target: {fileID: 9047501371615908992, guid: e07ba10ccf3d8114ba756b014f22bf9e,
         type: 3}
@@ -53238,7 +53240,7 @@ PrefabInstance:
     - target: {fileID: 9047501371615908992, guid: e07ba10ccf3d8114ba756b014f22bf9e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.26
+      value: -6.17
       objectReference: {fileID: 0}
     - target: {fileID: 9047501371615908992, guid: e07ba10ccf3d8114ba756b014f22bf9e,
         type: 3}
@@ -56131,7 +56133,7 @@ PrefabInstance:
     - target: {fileID: 9047501371615908992, guid: e07ba10ccf3d8114ba756b014f22bf9e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.09
+      value: -13.99
       objectReference: {fileID: 0}
     - target: {fileID: 9047501371615908992, guid: e07ba10ccf3d8114ba756b014f22bf9e,
         type: 3}
@@ -65170,7 +65172,7 @@ PrefabInstance:
     - target: {fileID: 9047501371615908992, guid: e07ba10ccf3d8114ba756b014f22bf9e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.26
+      value: -6.17
       objectReference: {fileID: 0}
     - target: {fileID: 9047501371615908992, guid: e07ba10ccf3d8114ba756b014f22bf9e,
         type: 3}

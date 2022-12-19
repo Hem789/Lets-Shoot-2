@@ -17,7 +17,7 @@ public class BrownCoin : MonoBehaviour
             FindObjectOfType<GameManager>().browncoin();
             MF_AutoPool.Spawn(effect,transform.position,transform.rotation);
             //effect.SetActive(true);
-            if(FindObjectOfType<GameManager>().level==2 || FindObjectOfType<GameManager>().level==4)
+            if(FindObjectOfType<GameManager>().level==2 )
             {
             MF_AutoPool.Despawn(gameObject);
             }
