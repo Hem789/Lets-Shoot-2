@@ -33,7 +33,7 @@ public class createEnemyHeli : MonoBehaviour
             //MF_AutoPool.Spawn(heli,new Vector3(player.transform.position.x,0,player.transform.position.z)+new Vector3(5*x,20,5*z),Quaternion.Euler(0,180,0));
             if(suru.transform.position.y>0)
             {
-            MF_AutoPool.Spawn(heli,suru.transform.position,Quaternion.Euler(0,180,0));
+            MF_AutoPool.Spawn(heli,new Vector3(suru.transform.position.x,20,suru.transform.position.z),Quaternion.Euler(0,180,0));
             }
             /*else
             {
