@@ -16,6 +16,26 @@ public class levelStorage : MonoBehaviour
     private Vector3 distance;
     private GameObject player;
     public Text level,score;
+    
+    void OnEnable()
+    {
+        if(norm)
+        {
+            levelData data=SaveManager.StoredItem();
+            if(data!=null)
+            {
+            norm.value=data.normal;
+            shot.value=data.zoom;
+            scop.value=data.scoped;
+            //if(data.volume!=null)
+            volu.value=data.volume;}
+            
+            else
+            {
+                Default();
+            }
+        }
+    }
     void Start()
     {
         if(FindObjectOfType<GameManager>())

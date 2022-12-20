@@ -193,7 +193,6 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 63b5203b8969371d69658a57c77cf10a Assembly-CSharp.dll:.Plus
 0955befc405ffa159afd2d7c566e3e9f Assembly-CSharp.dll:.sniperWalk
-f1cc023ec6416238e0afd51fd82e7ac4 Assembly-CSharp.dll:.Sensitivity
 350f6f9c95c0aae398eae056b7cea4a1 Assembly-CSharp.dll:.Colision
 e3f7d97ebb851635a6cf4fc5c5c53868 Assembly-CSharp.dll:.GetIn
 778f56026a86195869bc7d66f115aebc Assembly-CSharp.dll:.Lift

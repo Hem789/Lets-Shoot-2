@@ -103,7 +103,6 @@
      <Compile Include="Assets\Script\Plus.cs" />
      <Compile Include="Assets\Script\Rifleman.cs" />
      <Compile Include="Assets\Script\SaveManager.cs" />
-     <Compile Include="Assets\Script\Sensitivity.cs" />
      <Compile Include="Assets\Script\settingInactive.cs" />
      <Compile Include="Assets\Script\Sniperman.cs" />
      <Compile Include="Assets\Script\sniperWalk.cs" />
