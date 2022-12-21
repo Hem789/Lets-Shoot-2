@@ -520,7 +520,7 @@ RectTransform:
   - {fileID: 1812604281}
   - {fileID: 1732230252}
   m_Father: {fileID: 1419260079}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2010,7 +2010,7 @@ RectTransform:
   - {fileID: 162502704}
   - {fileID: 1312272164}
   m_Father: {fileID: 1419260079}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2038,6 +2038,7 @@ MonoBehaviour:
   scop: {fileID: 2080948799}
   volu: {fileID: 1312272165}
   don: 2
+  storedValue: 0
   anime: {fileID: 0}
   level: {fileID: 0}
   score: {fileID: 0}
@@ -2282,7 +2283,6 @@ GameObject:
   - component: {fileID: 468849594}
   - component: {fileID: 468849598}
   - component: {fileID: 468849597}
-  - component: {fileID: 468849596}
   - component: {fileID: 468849595}
   m_Layer: 5
   m_Name: Reset
@@ -2350,7 +2350,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 468849596}
+      - m_Target: {fileID: 304112702}
         m_MethodName: Reset
         m_Mode: 1
         m_Arguments:
@@ -2405,30 +2405,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &468849596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 468849593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f32cc3cf2415b9d4eb0e9af060072b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  normal: 0
-  shoot: 0
-  scoped: 0
-  vol: 0
-  norm: {fileID: 1069682042}
-  shot: {fileID: 275161017}
-  scop: {fileID: 2080948799}
-  volu: {fileID: 0}
-  don: 2
-  anime: {fileID: 0}
-  level: {fileID: 0}
-  score: {fileID: 0}
 --- !u!114 &468849597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3027,7 +3003,7 @@ RectTransform:
   - {fileID: 1612940144}
   - {fileID: 1625321974}
   m_Father: {fileID: 1419260079}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4134,7 +4110,7 @@ RectTransform:
   - {fileID: 1088017844}
   - {fileID: 1726887755}
   m_Father: {fileID: 1419260079}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6709,11 +6685,11 @@ RectTransform:
   m_Children:
   - {fileID: 1913657295}
   - {fileID: 1990125255}
-  - {fileID: 304112701}
   - {fileID: 584036354}
   - {fileID: 969157446}
   - {fileID: 1750220619}
   - {fileID: 110413813}
+  - {fileID: 304112701}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8477,7 +8453,7 @@ RectTransform:
   - {fileID: 2136519310}
   - {fileID: 130056368}
   m_Father: {fileID: 1419260079}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9691,9 +9667,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 833c2aa46950d0345ac333f7611f6118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  a: {fileID: 1069682042}
-  b: {fileID: 275161017}
-  c: {fileID: 2080948799}
 --- !u!4 &1980917401
 Transform:
   m_ObjectHideFlags: 0

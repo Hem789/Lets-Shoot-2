@@ -11,7 +11,7 @@ public class levelStorage : MonoBehaviour
     //public static float stanormal,stashoot,stascoped;
 
     public Slider norm,shot,scop,volu;
-    public int don;
+    public int don,storedValue;
     public Animator anime;
     private Vector3 distance;
     private GameObject player;
@@ -28,7 +28,9 @@ public class levelStorage : MonoBehaviour
             shot.value=data.zoom;
             scop.value=data.scoped;
             //if(data.volume!=null)
-            volu.value=data.volume;}
+            volu.value=data.volume;
+            storedValue=data.store;
+            }
             
             else
             {
@@ -153,6 +155,7 @@ public class levelStorage : MonoBehaviour
         shoot=shot.value;
         scoped=scop.value;
         vol=volu.value;
+        don=storedValue+1;
         SaveManager.Save(this);
         
     }
