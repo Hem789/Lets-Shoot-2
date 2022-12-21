@@ -41,7 +41,7 @@ public class Survival : MonoBehaviour
             if(hit.transform.gameObject.tag=="Ground")
             {
             if((number-manager.Deaths)<=5)
-            Instantiate(tactical,new Vector3(player.transform.position.x+2*x,hit.point.y,player.transform.position.z+2*z),player.transform.rotation* Quaternion.Euler(0,180,0));
+            Instantiate(tactical,new Vector3(player.transform.position.x+2*x,hit.point.y+.5F,player.transform.position.z+2*z),player.transform.rotation* Quaternion.Euler(0,180,0));
             time=5;
             number++;
             }

@@ -55,6 +55,8 @@ public class Player : MonoBehaviour
     }
     void LateUpdate()
     {
+        if(manager.healthCount>0)
+        {
         if(Physics.Raycast(transform.position+new Vector3(0,1F,0),new Vector3(0,-1,0),out ground,50, ~mask))
         {
             if(transform.position.y>swim)
@@ -73,7 +75,7 @@ public class Player : MonoBehaviour
            {
            falling=true;
            rb.AddForce(new Vector3(0,-180,0));
-           colli.center=new Vector3(colli.center.x,1.8F,colli.center.z);
+           colli.center=new Vector3(colli.center.x,0F,colli.center.z);
            colli.size=new Vector3(colli.size.x,.4F,colli.size.z);
            }
             }
@@ -93,6 +95,7 @@ public class Player : MonoBehaviour
                 doll(true);
             
             }
+        }
         }
        
     }

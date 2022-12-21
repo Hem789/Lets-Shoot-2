@@ -34,7 +34,7 @@ public class enemyWalk : MonoBehaviour
     }
     void OnCollisionStay(Collision a)
     {
-       if((a.gameObject.tag=="Player" && manager.outside==false)|| a.gameObject.tag=="Vehicle")
+       if(a.gameObject.tag=="Player" && manager.outside==false)//|| a.gameObject.tag=="Vehicle")
         {
         manager.enemy();
         agent.enabled=false;
@@ -416,13 +416,23 @@ public class enemyWalk : MonoBehaviour
         if(agent.isOnNavMesh)
         {
         if(agent.remainingDistance>agent.stoppingDistance)
-        {
+        {  
+            if(manager.level!=2)
+            {
+            Rb.constraints=~RigidbodyConstraints.FreezePositionX;
+            Rb.constraints=~RigidbodyConstraints.FreezePositionZ;
+            }
             agent.updateRotation=true;
             agent.updatePosition=true;
             anime.SetBool("run",true);
         }
         if(agent.remainingDistance<=agent.stoppingDistance)
         {
+            if(manager.level!=2)
+            {
+            Rb.constraints=RigidbodyConstraints.FreezePositionX;
+            Rb.constraints=RigidbodyConstraints.FreezePositionZ;
+            }
             anime.SetBool("run",false);
             agent.updateRotation=false;
             agent.updatePosition=false;
