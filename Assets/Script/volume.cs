@@ -20,22 +20,14 @@ public class volume : MonoBehaviour
         }
         
     }
-    void OnEnable()
-    {
-        sound=GetComponent<AudioSource>();
-        sound.volume=vol*volumeCofficient;
-        levelData data=SaveManager.StoredItem();
-        if(data!=null)
-        {
-            vol=data.volume;
-        }
-    }
+    
     public void back()
     {
         levelData data=SaveManager.StoredItem();
         if(data!=null)
         {
             vol=data.volume;
+            sound.volume=vol;
         }
     }
 
@@ -53,6 +45,7 @@ public class volume : MonoBehaviour
     public void slider(float a)
     {
         vol=a;
+        sound.volume=vol;
        // Debug.Log("success");
     }     
 }
