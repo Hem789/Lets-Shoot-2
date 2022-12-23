@@ -112,7 +112,11 @@ public class levelStorage : MonoBehaviour
     }
     void OnTriggerEnter()
     {
-     
+
+        if(storedValue+1>currentLevel)
+        {
+            don=storedValue+1;
+        }
         SaveManager.Save(this);
         if(FindObjectOfType<GameManager>())
         {
