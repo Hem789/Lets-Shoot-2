@@ -34,7 +34,7 @@ public class enemyWalk : MonoBehaviour
     }
     void OnCollisionStay(Collision a)
     {
-       if(a.gameObject.tag=="Player" && manager.outside==false)//|| a.gameObject.tag=="Vehicle")
+       if((a.gameObject.tag=="Player" && manager.outside==false)|| a.gameObject.tag=="Vehicle")
         {
         manager.enemy();
         agent.enabled=false;
