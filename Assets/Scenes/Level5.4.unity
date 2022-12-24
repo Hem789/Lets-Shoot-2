@@ -3570,7 +3570,7 @@ PrefabInstance:
     - target: {fileID: 184851279177652157, guid: 09014960e770a654883e99eff1d30830,
         type: 3}
       propertyPath: m_Mass
-      value: 50
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 184851279177652157, guid: 09014960e770a654883e99eff1d30830,
         type: 3}
@@ -3782,6 +3782,11 @@ PrefabInstance:
       propertyPath: reloader
       value: 
       objectReference: {fileID: 1596629112}
+    - target: {fileID: 184851279571858695, guid: 09014960e770a654883e99eff1d30830,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 184851279571858700, guid: 09014960e770a654883e99eff1d30830,
         type: 3}
       propertyPath: Right
@@ -4174,7 +4179,7 @@ PrefabInstance:
     - target: {fileID: 3484836518676543060, guid: 868529151846e734b94943e0053c9533,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 868529151846e734b94943e0053c9533, type: 3}

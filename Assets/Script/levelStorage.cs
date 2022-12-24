@@ -43,6 +43,10 @@ public class levelStorage : MonoBehaviour
         if(FindObjectOfType<GameManager>())
         {
         currentLevel=FindObjectOfType<GameManager>().level;
+        if(currentLevel==6)
+        {
+            this.gameObject.SetActive(false);
+        }
         if(currentLevel!=0)
         {
         levelData data=SaveManager.StoredItem();
